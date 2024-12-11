@@ -1,0 +1,205 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(242, 208, 214, 0.59);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1e2e2;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+ .nav-icons a {
+    color: transparent;
+    -webkit-text-stroke: 1.2px #b56364;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.menu-icon #btn ,#cancel{
+  color: transparent;
+  -webkit-text-stroke: .5px #b56364;
+}
+.menu-icon #btn .Glimmer{
+    font-weight: 15;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px;
+    border: none;
+    background-color: #b56364;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    TOP: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: whitesmoke;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-family: 'Great Vibes';
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    line-height: 70px;
+    background-color: azure;
+    user-select: none;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 44px;
+    font-size: 13px;
+    color: rgb(10, 10, 10);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(241, 130, 147, 0.679);
+    border-bottom: 1px solid rgba(241, 130, 147, 0.679);
+    transition: .3s;
+    text-decoration: none;
+}
+.social{
+justify-content: space-between;
+display: flex;
+padding: 55px;
+background-color: azure;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 4px;
+    top: 11px;
+    font-size: 16px;
+    color: #b56364;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 23px;
+    font-size: 13px;
+    color: #b56364;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 215px;
+}
+
+label #btn a {
+    color: #b56364;
+    padding: 10px;
+    font-size: 23px;
+    font-family: 'Lucida Handwriting';
+    text-decoration: none;
+}
+.content.blurred { 
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+.jew{
+    position: inherit;
+}
+
+.bracelet-container { 
+    display: flex; 
+    gap: 160px; 
+    justify-content: center;  
+    align-items: flex-start; 
+    margin: 20px 0; 
+}
+
+.bhu3{
+    margin-left: -135px;
+}
+
+.bhu4{
+    margin-left: -33px;
+}
+
+.bhu5{
+    margin-left: -105px;
+}
+
+.bhu6{
+    margin-left: -60px;
+}
+.bhu1{
+    text-align: center;
+    
+}
+
+.bhu2{
+    border-radius: 5vh;   
+}
+
